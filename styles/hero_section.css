@@ -1,0 +1,224 @@
+.hero {
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: calc(100vh - 64px);
+  padding: 10px 0;
+}
+
+.hero__top {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 40%;
+  width: 100%;
+}
+.hero__picture {
+  align-items: end;
+  border-bottom: 4px solid var(--color-primary);
+  border-radius: 0 100px 5% 0;
+  background-image: linear-gradient(#432a9c, #00000000, #432a9c),
+    url('../img/hero_profileImage_small.png');
+  background-position-y: 20%;
+  background-position-x: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.hero__button {
+  display: flex;
+  gap: 0.2rem;
+  padding-bottom: 24px;
+}
+.button_link {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-top: 24px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.button_link:hover {
+  background-color: #f3f4f022;
+  border: 1px solid var(--color-primary);
+  color: var(--text-color);
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.hero__bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 12px 8px 34px;
+  width: 100%;
+}
+
+.hero__title {
+  font-size: 2rem;
+}
+
+span {
+  color: var(--color-primary);
+  font-weight: 400;
+}
+.hero__name {
+  color: var(--text-color);
+}
+
+.hero__subtitle {
+  color: var(--color-primary);
+  font-size: 2.1rem;
+}
+
+.hero__description {
+  font-size: 1.1rem;
+  font-weight: 200;
+  line-height: 1.75rem;
+  padding-right: 24px;
+}
+
+.hero__social {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: left;
+}
+.hero__social a {
+  display: inline-block;
+  padding: 4px 8px;
+}
+
+.hero__social a:hover {
+  color: var(--color-primary);
+  filter: drop-shadow(0 0 0.75rem var(--color-primary));
+}
+
+.hero__social a:nth-of-type(1) {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    flex-direction: row;
+    height: 100%;
+    padding: 0;
+  }
+
+  .hero__top {
+    align-items: start;
+    height: calc(100vh - 69px);
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .hero__picture {
+    border-radius: 0 40% 10% 0;
+    background-image: linear-gradient(#432a9c, #00000000, #432a9c),
+      url('../img/hero_profilePicture_large.png');
+    background-size: cover;
+    background-position-y: 60%;
+    background-position-x: 10%;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 100%;
+  }
+
+  .hero__button {
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 60px;
+  }
+
+  .button_link {
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  .hero__title {
+    font-size: 2.1rem;
+  }
+  .hero__subtitle {
+    font-size: 2.4rem;
+    font-weight: 300;
+  }
+
+  .hero__description {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    max-width: 600px;
+    padding-right: 24px;
+  }
+
+  .hero__bottom {
+    padding: 40px 12px 8px 16px;
+    height: 100%;
+  }
+
+  .hero__social {
+    padding-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 2.6rem;
+  }
+
+  .hero__subtitle {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .hero__button {
+    padding-bottom: 120px;
+  }
+
+  .hero__bottom {
+    padding: 40px 12px 8px 100px;
+  }
+  .button_link {
+    font-size: 1.12rem;
+    font-weight: 300;
+    border-radius: 8px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .hero__bottom {
+    padding-left: 12px;
+  }
+  .hero__description {
+    padding-right: 0;
+    font-size: 1rem;
+  }
+  .hero__button {
+    flex-direction: column;
+  }
+  .hero__social a {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .button_link {
+    border-radius: 7px;
+    padding: 10px 15px;
+  }
+}

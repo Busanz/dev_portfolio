@@ -1,0 +1,131 @@
+.navbar {
+  align-items: center;
+  background-color: #432a9c;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 24px;
+}
+
+.navbar__logo {
+  color: #d5f505;
+  cursor: pointer;
+  font-family: "Audiowide", sans-serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  padding-left: 2px;
+  padding-right: 10px;
+}
+
+.navbar__logo a {
+  margin: 0;
+}
+
+.navbar__logo__i {
+  color: #d5f505;
+  font-family: "Audiowide", sans-serif;
+  font-style: normal;
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+}
+
+.menu__wrapper {
+  align-items: end;
+  background-color: #432a9c;
+  display: none;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-weight: 100;
+  gap: 8px;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  width: 100%;
+}
+
+.menu__item {
+  justify-self: center;
+  padding: 10px 32px;
+}
+
+.menu__item.item_first {
+  padding-top: 20px;
+}
+
+.lucide-menu {
+  display: block;
+}
+.lucide-menu:hover {
+  background-color: #e5d7d733;
+  display: block;
+}
+.menu:hover .menu__wrapper,
+.menu__mobile:hover + .menu__wrapper {
+  animation: menu__mobile_hover_trans 0.2s ease-in forwards;
+  animation: menu__mobile_hover_trans_bg 0.3s ease-in forwards;
+  display: flex;
+  max-height: calc(50vh - 56px);
+}
+
+.menu:hover .menu__wrapper,
+.menu__mobile:hover + .menu__wrapper.menu__item {
+  opacity: 1;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar {
+    padding: 4px 32px;
+  }
+  .menu__mobile {
+    display: none;
+  }
+
+  .menu__item {
+    padding: 0 15px;
+  }
+
+  .menu__wrapper {
+    align-items: center;
+    background-color: #432a9c;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: auto;
+  }
+
+  .menu__item.item_first {
+    padding-top: 0;
+  }
+  .navbar__logo {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .navbar {
+    padding: 4px 8px;
+  }
+}
+
+@keyframes menu__mobile_hover_trans {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: calc(50vh - 56px);
+  }
+}
+
+@keyframes menu__mobile_hover_trans_bg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

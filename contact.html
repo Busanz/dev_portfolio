@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/hero_section.css" />
+    <title>Buddhi-contact me</title>
+  </head>
+  <body class="contact_menuItem">
+    <header>
+      <nav class="navbar">
+        <div>
+          <a href="index.html" class="navbar__logo"
+            >B<span class="navbar__logo-i">i</span></a
+          >
+        </div>
+
+        <div class="menu">
+          <div class="menu__mobile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="56"
+              height="56"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="0.75"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+              class="lucide lucide-menu"
+            >
+              <path d="M4 6h16" />
+              <path d="M4 12h16" />
+              <path d="M4 18h16" />
+            </svg>
+          </div>
+          <div class="menu__wrapper">
+            <a href="index.html" class="menu__item item_first">Home</a>
+            <a href="portfolio.html" class="menu__item">Portfolio</a>
+            <a href="aboutme.html" class="menu__item">About me</a>
+            <a href="contact.html" class="menu__item contact_menuItem"
+              >Contact me</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="contact__section">
+      <h1 class="contact__title">
+        Let<span class="title_char">'</span>s connect<span class="title_char">
+          &nbsp;!</span
+        >
+      </h1>
+
+      <div class="contact__desktop_image">
+        <img
+          alt="Desktop image contact me"
+          src="./img/contactMe.png"
+          width="412px"
+          height="auto"
+        />
+      </div>
+
+      <div class="contact__wrapper">
+        <form
+          action="mailto:buddhidesilva@gmail.com"
+          method="POST"
+          enctype="text/plain"
+          class="contact_form"
+        >
+          <div class="form__input_name">
+            <label for="input-name">Name</label>
+            <input
+              type="text"
+              name="input-name"
+              id="input-name"
+              placeholder="&nbsp;&nbsp;Eg:Buddhi De Silva"
+            />
+          </div>
+
+          <div class="form__input_email">
+            <label for="input_email">Email</label>
+            <input
+              type="email"
+              name="input_email"
+              id="input_email"
+              placeholder="&nbsp;&nbsp;Eg:buddhidesilva@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="form__input_message">
+            <label for="input_message">Message</label>
+            <textarea
+              id="input_message"
+              name="input_message"
+              rows="5"
+              placeholder="&nbsp;Your message here"
+              required
+            ></textarea>
+          </div>
+          <button class="form__submit_info">Submit</button>
+        </form>
+
+        <div class="contact__info">
+          <div class="info_rest">
+            <p class="info_mobileNumber">077-170 70 71</p>
+            <p class="info_emailAdress">buddhidesilva@gmail.com</p>
+            <p class="info_LinkedIn">linkedin/in/buddhisanz</p>
+          </div>
+          <div class="info__social">
+            <a
+              href="https://www.linkedin.com/in/buddhi-sandaruwan/"
+              target="_blank"
+              ><img
+                src="./img/linkedin.svg"
+                alt="Social Icon LinkedIn"
+                height="40px"
+                width="40px"
+              />
+            </a>
+            <a href="https://github.com/" target="_blank"
+              ><img
+                src="./img/github.svg"
+                alt="Social Icon Github"
+                height="40px"
+                width="40px"
+              />
+            </a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img
+                src="./img/facebook.svg"
+                alt="Social Icon Facebook"
+                height="40px"
+                width="40px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- </main> -->
+  </body>
+</html>
