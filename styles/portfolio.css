@@ -37,6 +37,7 @@
 }
 
 .article_image {
+  border: 0.5px solid #ffffff;
   width: 100%;
 }
 
