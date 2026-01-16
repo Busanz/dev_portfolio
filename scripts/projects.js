@@ -44,6 +44,7 @@ const fetchGitHubProjects = async () => {
             src="${imageSrc}"
             alt="${repo.name}"
             class="project_image"
+            fetchpriority="high"
           />
         </div>
 
