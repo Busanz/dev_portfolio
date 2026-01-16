@@ -47,7 +47,7 @@ const fetchGitHubProjects = async () => {
           />
         </div>
 
-        <h3 class="article_title">${titleOfProject}</h3>
+        <h1 class="article_title">${titleOfProject}</h1>
         <p class="hero__description">
           ${repo.description || 'No description provided.'}
         </p>
