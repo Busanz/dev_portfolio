@@ -19,10 +19,10 @@ const fetchGitHubProjects = async () => {
       const publishUrl = `https://${GITHUB_USERNAME}.github.io/${repo.name}/`;
 
       const projectImage = {
-        dev_portfolio: '../img/portfolio/dev_portfolio.png',
-        'web-game-treasure-box': '../img/portfolio/web-game-treasure-box.png',
-        'fg-02-js-text-game': '../img/portfolio/fg-02-js-text-game.png',
-        versioncontrol_group_09: '../img/portfolio/versioncontrol_group_09.png',
+        dev_portfolio: './img/portfolio/dev_portfolio.png',
+        'web-game-treasure-box': './img/portfolio/web-game-treasure-box.png',
+        'fg-02-js-text-game': './img/portfolio/fg-02-js-text-game.png',
+        versioncontrol_group_09: './img/portfolio/versioncontrol_group_09.png',
       };
       const projectTitle = {
         dev_portfolio: 'Portfolio Website',
@@ -31,7 +31,7 @@ const fetchGitHubProjects = async () => {
         versioncontrol_group_09: 'Version Control Blog',
       };
       const imageSrc =
-        projectImage[repo.name] || '../img/portfolio/project-placeholder.png';
+        projectImage[repo.name] || './img/portfolio/project-placeholder.png';
       const titleOfProject = projectTitle[repo.name];
 
       const article = document.createElement('article');
