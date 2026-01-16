@@ -13,7 +13,8 @@ html {
 
 body {
   align-items: center;
-  background-color: #432a9c;
+  /* background-color: #432a9c; */
+  background-color: #14083f;
   color: var(--text-color);
   display: flex;
   flex-direction: column;

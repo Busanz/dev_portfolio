@@ -1,6 +1,6 @@
 .navbar {
   align-items: center;
-  background-color: #432a9c;
+  background-color: #14083f;
   display: flex;
   justify-content: space-between;
   padding: 4px 24px;
@@ -9,7 +9,7 @@
 .navbar__logo {
   color: #d5f505;
   cursor: pointer;
-  font-family: "Audiowide", sans-serif;
+  font-family: 'Audiowide', sans-serif;
   font-style: italic;
   font-size: 2.5rem;
   padding-left: 2px;
@@ -22,7 +22,7 @@
 
 .navbar__logo__i {
   color: #d5f505;
-  font-family: "Audiowide", sans-serif;
+  font-family: 'Audiowide', sans-serif;
   font-style: normal;
 }
 
@@ -33,7 +33,7 @@
 
 .menu__wrapper {
   align-items: end;
-  background-color: #432a9c;
+  background-color: #14083f;
   display: none;
   flex-direction: column;
   font-size: 1.2rem;
@@ -88,7 +88,7 @@
 
   .menu__wrapper {
     align-items: center;
-    background-color: #432a9c;
+    background-color: #14083f;
     display: flex;
     flex-direction: row;
     height: auto;
