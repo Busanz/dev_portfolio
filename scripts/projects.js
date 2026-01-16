@@ -15,10 +15,10 @@ const fetchGitHubProjects = async () => {
       (repo) => repo.has_pages === true && !hiddenRepo.includes(repo.name)
     );
     const projectImage = {
-      dev_portfolio: './img/portfolio/dev_portfolio.png',
-      'web-game-treasure-box': './img/portfolio/web-game-treasure-box.png',
-      'fg-02-js-text-game': './img/portfolio/fg-02-js-text-game.png',
-      versioncontrol_group_09: './img/portfolio/versioncontrol_group_09.png',
+      dev_portfolio: './img/portfolio/dev_portfolio.webp',
+      'web-game-treasure-box': './img/portfolio/web-game-treasure-box.webp',
+      'fg-02-js-text-game': './img/portfolio/fg-02-js-text-game.webp',
+      versioncontrol_group_09: './img/portfolio/versioncontrol_group_09.webp',
     };
     const projectTitle = {
       dev_portfolio: 'Portfolio Website',
