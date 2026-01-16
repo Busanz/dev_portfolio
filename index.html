@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buddhi-Home Page</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,8 +22,8 @@
   <link rel="stylesheet" href="./styles/header.css" />
   <link rel="stylesheet" href="./styles/hero_section.css" />
 
-
-  <title>Buddhi-Home Page</title>
+  <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+  <script src="./scripts/animation.js" defer></script>
 
 </head>
 
@@ -54,15 +56,15 @@
 
   <section class="hero">
     <div class="hero__top">
-      <div class="hero__picture">
+      <div class="hero__picture" data-aos="fade-in" data-aos-duration="1500">
         <div class="hero__button">
           <a href="contact.html" class="button_link">Contact me</a>
           <a href="https://www.linkedin.com/in/buddhi-sandaruwan/" class="button_link" target="_blank">Download CV</a>
         </div>
       </div>
     </div>
-    <div class="hero__bottom">
-      <h1 class="hero__title">
+    <div class="hero__bottom" data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="hero__title" >
         Hello I'm <span class="hero__name">Buddhi </span> <span>!</span></span>
       </h1>
       <h2 class="hero__subtitle">Frontend Developer<br />UX Designer</h2>

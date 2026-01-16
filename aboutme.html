@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buddhi-About me</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link
       rel="stylesheet"
@@ -28,7 +30,9 @@
     <link rel="stylesheet" href="./styles/what_i_do.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
 
-    <title>Buddhi-About me</title>
+    <link rel="stylesheet" href="./styles/animation.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="./scripts/animation.js" defer></script>
   </head>
   <body class="aboutme_menuItem">
     <header>
@@ -70,8 +74,8 @@
       </nav>
     </header>
 
-    <section>
-      <div class="intro">
+    <main>
+      <div class="intro" data-aos="fade-up-short" data-aos-duration="1000">
         <div class="intro_left">
           <h1 class="intro__title">
             Building scalable frontends with thoughtful user experience
@@ -97,10 +101,10 @@
           </p>
         </div>
       </div>
-    </section>
+    </main>
 
     <section>
-      <div class="aboutme">
+      <div class="aboutme" data-aos="fade-up-short" data-aos-duration="1000">
         <div class="aboutme_header">
           <h1 class="intro__title">Let's explore skills</h1>
           <p class="hero__description">
@@ -140,7 +144,7 @@
     </section>
 
     <section>
-      <div class="what_i_do">
+      <div class="what_i_do" data-aos="fade-up-short" data-aos-duration="1000">
         <h1 class="intro__title">What I do</h1>
 
         <div class="cards">
@@ -258,7 +262,11 @@
     </section>
 
     <footer class="footer">
-      <div class="footer__content">
+      <div
+        class="footer__content"
+        data-aos="fade-up-short"
+        data-aos-duration="1000"
+      >
         <h1 class="footer__titile">
           Designing with purpose. Building with precision.
         </h1>

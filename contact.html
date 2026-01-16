@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buddhi-contact me</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Audiowide"
@@ -24,7 +27,11 @@
     <link rel="stylesheet" href="./styles/contact.css" />
     <link rel="stylesheet" href="./styles/hero_section.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
-    <title>Buddhi-contact me</title>
+    <link rel="stylesheet" href="./styles/intro.css" />
+
+    <link rel="stylesheet" href="./styles/animation.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="./scripts/animation.js" defer></script>
   </head>
   <body class="contact_menuItem">
     <header>
@@ -66,96 +73,98 @@
       </nav>
     </header>
 
-    <section class="contact__section">
-      <h1 class="contact__title">
-        Let<span class="title_char">'</span>s connect<span class="title_char">
-          &nbsp;!</span
-        >
-      </h1>
+    <section>
+      <div class="contact" data-aos="fade-up-short" data-aos-duration="1000">
+        <h1 class="intro__title">
+          Let<span class="title_char">'</span>s connect<span class="title_char">
+            &nbsp;!</span
+          >
+        </h1>
 
-      <div class="contact__desktop_image">
-        <img
-          alt="Desktop image contact me"
-          src="./img/contactMe.png"
-          width="412px"
-          height="auto"
-        />
-      </div>
+        <div class="contact__desktop_image">
+          <img
+            alt="Desktop image contact me"
+            src="./img/contactMe.png"
+            width="412px"
+            height="auto"
+          />
+        </div>
 
-      <div class="contact__wrapper">
-        <form
-          action="mailto:buddhidesilva@gmail.com"
-          method="POST"
-          enctype="text/plain"
-          class="contact_form"
-        >
-          <div class="form__input_name">
-            <label for="input-name">Name</label>
-            <input
-              type="text"
-              name="input-name"
-              id="input-name"
-              placeholder="&nbsp;&nbsp;Eg:Buddhi De Silva"
-            />
-          </div>
-
-          <div class="form__input_email">
-            <label for="input_email">Email</label>
-            <input
-              type="email"
-              name="input_email"
-              id="input_email"
-              placeholder="&nbsp;&nbsp;Eg:buddhidesilva@gmail.com"
-              required
-            />
-          </div>
-
-          <div class="form__input_message">
-            <label for="input_message">Message</label>
-            <textarea
-              id="input_message"
-              name="input_message"
-              rows="5"
-              placeholder="&nbsp;Your message here"
-              required
-            ></textarea>
-          </div>
-          <button class="form__submit_info">Submit</button>
-        </form>
-
-        <div class="contact__info">
-          <div class="info_rest">
-            <p class="info_mobileNumber">077-170 70 71</p>
-            <p class="info_emailAdress">buddhidesilva@gmail.com</p>
-            <p class="info_LinkedIn">linkedin/in/buddhisanz</p>
-          </div>
-          <div class="info__social">
-            <a
-              href="https://www.linkedin.com/in/buddhi-sandaruwan/"
-              target="_blank"
-              ><img
-                src="./img/linkedin.svg"
-                alt="Social Icon LinkedIn"
-                height="40px"
-                width="40px"
+        <div class="contact__wrapper">
+          <form
+            action="mailto:buddhidesilva@gmail.com"
+            method="POST"
+            enctype="text/plain"
+            class="contact_form"
+          >
+            <div class="form__input_name">
+              <label for="input-name">Name</label>
+              <input
+                type="text"
+                name="input-name"
+                id="input-name"
+                placeholder="&nbsp;&nbsp;Eg:Buddhi De Silva"
               />
-            </a>
-            <a href="https://github.com/" target="_blank"
-              ><img
-                src="./img/github.svg"
-                alt="Social Icon Github"
-                height="40px"
-                width="40px"
+            </div>
+
+            <div class="form__input_email">
+              <label for="input_email">Email</label>
+              <input
+                type="email"
+                name="input_email"
+                id="input_email"
+                placeholder="&nbsp;&nbsp;Eg:buddhidesilva@gmail.com"
+                required
               />
-            </a>
-            <a href="https://www.facebook.com/" target="_blank"
-              ><img
-                src="./img/facebook.svg"
-                alt="Social Icon Facebook"
-                height="40px"
-                width="40px"
-              />
-            </a>
+            </div>
+
+            <div class="form__input_message">
+              <label for="input_message">Message</label>
+              <textarea
+                id="input_message"
+                name="input_message"
+                rows="5"
+                placeholder="&nbsp;Your message here"
+                required
+              ></textarea>
+            </div>
+            <button class="form__submit_info">Submit</button>
+          </form>
+
+          <div class="contact__info">
+            <div class="info_rest">
+              <p class="info_mobileNumber">077-170 70 71</p>
+              <p class="info_emailAdress">buddhidesilva@gmail.com</p>
+              <p class="info_LinkedIn">linkedin/in/buddhisanz</p>
+            </div>
+            <div class="info__social">
+              <a
+                href="https://www.linkedin.com/in/buddhi-sandaruwan/"
+                target="_blank"
+                ><img
+                  src="./img/linkedin.svg"
+                  alt="Social Icon LinkedIn"
+                  height="40px"
+                  width="40px"
+                />
+              </a>
+              <a href="https://github.com/" target="_blank"
+                ><img
+                  src="./img/github.svg"
+                  alt="Social Icon Github"
+                  height="40px"
+                  width="40px"
+                />
+              </a>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img
+                  src="./img/facebook.svg"
+                  alt="Social Icon Facebook"
+                  height="40px"
+                  width="40px"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>

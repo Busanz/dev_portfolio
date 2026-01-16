@@ -59,7 +59,8 @@ header {
   width: 100%;
 }
 
-section {
+section,
+main {
   display: flex;
   justify-items: center;
   height: 100%;

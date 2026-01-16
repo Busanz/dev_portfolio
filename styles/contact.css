@@ -1,7 +1,10 @@
-.contact__section {
+.contact {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
-  padding: 20px 0;
-  height: calc(100vh - 64px);
+  margin: 10px 8px;
+  padding: 20px 12px;
+  width: 100%;
 }
 
 .contact__title {
@@ -14,7 +17,7 @@
 }
 
 .title_char {
-  color: var(--color-primary);
+  color: var(--text-color);
   display: inline-block;
   font-weight: 500;
 }
@@ -93,7 +96,7 @@ button.form__submit_info {
   border-radius: 8px;
   color: black;
   cursor: pointer;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: 2px;
@@ -137,7 +140,7 @@ button.form__submit_info {
   margin: 8px 0;
 }
 .info_rest {
-  padding: 0 12px;
+  padding: 0;
   order: 1;
 }
 
@@ -151,7 +154,7 @@ button.form__submit_info {
 }
 
 @media screen and (min-width: 769px) {
-  .contact__section {
+  .contact {
     align-items: center;
     justify-content: center;
     padding: 24px 0;
@@ -210,6 +213,10 @@ button.form__submit_info {
     order: 1;
   }
 }
+.contact .intro__title {
+  margin: 20px 8px;
+  padding: 20px 0;
+}
 
 @media screen and (max-width: 376px) {
   .contact_form {
@@ -219,5 +226,9 @@ button.form__submit_info {
 
   .contact__info {
     padding: 0 16px;
+  }
+  .contact .intro__title {
+    margin: 20px 8px;
+    padding: 20px 0;
   }
 }

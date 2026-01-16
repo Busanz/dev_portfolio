@@ -56,15 +56,15 @@ const fetchGitHubProjects = async () => {
           <a href="${
             repo.html_url
           }" target="_blank" aria-label="GitHub Repository Link">
-            <img src="./img/github.svg" alt="Git hub icon" width="40" height="40" />
+            <img src="./img/github.svg" alt="Git hub icon" width="30" height="30" />
           </a>
 
           <a href="${publishUrl}" target="_blank" aria-label="Live Project">
             <img
               src="./img/globe.svg"
               alt="Live site icon"
-              width="40"
-              height="40"
+              width="30"
+              height="30"
             />
           </a>
         </div>
